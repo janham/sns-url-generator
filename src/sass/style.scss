@@ -1,0 +1,43 @@
+$breakpoints: (
+    'sp': 'screen and (max-width: 480px)',
+    // 'tl': 'screen and (max-width: 896px)',
+    'pc': 'screen and (min-width: 897px)',
+) !default;
+
+@mixin mq($breakpoint: pc) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+body {
+    font-family: ‘Noto Sans JP’, sans-serif;
+}
+
+.pc {
+    @include mq() {
+        display: block;
+    }
+    // @include mq(tl) {
+    //     display: none;
+    // }
+    @include mq(sp) {
+        display: none;
+    }
+}
+
+.sp {
+    @include mq() {
+        display: none;
+    }
+    // @include mq(tl) {
+    //     display: block;
+    // }
+    @include mq(sp) {
+        display: block;
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
