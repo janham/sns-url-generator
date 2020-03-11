@@ -1,0 +1,91 @@
+$breakpoints: (
+    'sp': 'screen and (max-width: 480px)',
+    // 'tl': 'screen and (max-width: 896px)',
+    'pc': 'screen and (min-width: 897px)',
+) !default;
+
+@mixin mq($breakpoint: pc) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+body {
+    font-family: ‘Noto Sans JP’, sans-serif;
+}
+
+.pc {
+    @include mq() {
+        display: block;
+    }
+    // @include mq(tl) {
+    //     display: none;
+    // }
+    @include mq(sp) {
+        display: none;
+    }
+}
+
+.sp {
+    @include mq() {
+        display: none;
+    }
+    // @include mq(tl) {
+    //     display: block;
+    // }
+    @include mq(sp) {
+        display: block;
+    }
+}
+
+.container {
+    padding: 24px 0 40px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    &__h1 {
+        font-size: 30px;
+    }
+}
+
+.tags {
+
+    &__section {
+        padding: 24px 0;
+    }
+    &__html-title {
+        
+    }
+    &__pug-area {
+        padding: 24px 0;
+    }
+    &__line {
+        padding: 16px;
+    }
+    &__twitter {
+        padding: 16px;
+    }
+    &__facebook {
+        padding: 16px;
+    }
+}
+
+.form {
+    &__main {
+        padding: 16px 0;
+    }
+    &__twitter {
+        padding: 16px 0;
+    }
+    &__form-wrap-3 {
+        margin: 16px 0 0 0;
+    }
+    &__submit-button#submit-btn {
+        padding: 5px;
+        border: solid #000 1px;
+        display: inline-block;
+        cursor: pointer;
+    }
+}

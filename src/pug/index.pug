@@ -4,6 +4,87 @@ html(lang="ja")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        title SNS tag generator
         link(rel="stylesheet", href="./css/common/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        script(type="text/javascript" src="./js/main.min.js")
+
     body
+        main
+            .container
+                .title
+                    section.title__section
+                        h1.title__h1 SNS tag generator
+                .tags
+                    section.tags__section
+                        .tags__html-area
+                            h2.tags__html-title
+                            .tags__html-code-wrap
+                                .tags__html-code-url
+                                .tags__html-code-title
+                                .tags__html-code-type
+                                .tags__html-code-description
+                                .tags__html-code-image
+                                .tags__html-code-site_name
+                                .tags__html-code-local
+                                .tags__html-code-app_id
+                                .tags__html-code-twitter-card
+                                .tags__html-code-twitter-site
+                        .tags__pug-area
+                            h2.tags__pug-title
+                            .tags__pug-code-wrap
+                                .tags__pug-code-url
+                                .tags__pug-code-title
+                                .tags__pug-code-type
+                                .tags__pug-code-description
+                                .tags__pug-code-image
+                                .tags__pug-code-site_name
+                                .tags__pug-code-local
+                                .tags__pug-code-app_id
+                                .tags__pug-code-twitter-card
+                                .tags__pug-code-twitter-site
+                        .tags__url-area
+                            h2.tags__url-title
+                            .tags__line
+                                p.tags__line-title
+                                .tags__line-url-code
+                            .tags__twitter
+                                p.tags__twitter-title
+                                .tags__twitter-url-code
+                            .tags__facebook
+                                p.tags__facebook-title
+                                .tags__facebook-url-code
+                .form
+                    section.form__section
+                        h2.form__title 入力欄
+                        .form__main
+                            .form__form-wrap-1
+                                .form__main-label-box-1
+                                    p.form__label-text-1 テキスト
+                                .form__main-input-box-1
+                                    textarea(name="f-text" val="abc").form__main-input-1#f-text
+                            .form__form-wrap-2
+                                .form__main-label-box-2
+                                    p.form__label-text-2 URL
+                                .form__main-input-box-2
+                                    input(type="text" name="f-url").form__main-input-2#f-url
+                        .form__twitter
+                            p.form__twitter-title ===Twitter用オプション===
+                            .form__form-wrap-3
+                                .form__main-label-box-3
+                                    p.form__label-text-3 付与するアカウント
+                                .form__main-input-box-3
+                                    input(type="text" name="").form__main-input-3#t-account1
+                            .form__form-wrap-4
+                                .form__main-label-box-4
+                                    p.form__label-text-4 ツイート後にフォローを促すアカウント
+                                .form__main-input-box-4
+                                    input(type="text" name="").form__main-input-4#t-account2
+                            .form__form-wrap-5
+                                .form__main-label-box-5
+                                    p.form__label-text-5 ハッシュタグ
+                                .form__main-input-box-5
+                                    input(type="text" name="").form__main-input-5#t-hashtag
+                        .form__button-wrap
+                            p.form__submit-button#submit-btn 作成
