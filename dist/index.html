@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SNS tag generator</title>
+    <link rel="stylesheet" href="./css/common/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.min.js"></script>
+    <script type="text/javascript" src="./js/effects.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="head-message">
+        <p class="head-message__text"></p>
+      </div>
+      <div class="header">
+        <section class="header__section">
+          <h1 class="header__h1">SNS tag generator</h1>
+          <p class="header__description">左アイコン先のフォームに各必要事項を入力するとタグが生成されます。</p>
+        </section>
+      </div>
+      <div class="header__space"></div>
+      <p class="header__tag-g-icon-wrap"><i class="fas fa-tags"></i></p>
+      <div class="container">
+        <div class="tags">
+          <section class="tags__section">
+            <div class="tags__html-area">
+              <div class="tags__html-top-section"><img class="tags__html-logo" src="./images/html_logo.png">
+                <h2 class="tags__html-title">HTML</h2>
+              </div>
+              <div class="tags__html-code-wrap">
+                <div class="tags__html-notice-area"><i class="fas fa-arrow-circle-right tags__html-notice-url"></i><i class="fas fa-arrow-circle-right tags__html-notice-title"></i><i class="fas fa-arrow-circle-right tags__html-notice-type"></i><i class="fas fa-arrow-circle-right tags__html-notice-description"></i><i class="fas fa-arrow-circle-right tags__html-notice-image"></i><i class="fas fa-arrow-circle-right tags__html-notice-site_name"></i><i class="fas fa-arrow-circle-right tags__html-notice-local"></i><i class="fas fa-arrow-circle-right tags__html-notice-app_id"></i><i class="fas fa-arrow-circle-right tags__html-notice-card"></i><i class="fas fa-arrow-circle-right tags__html-notice-site"></i></div>
+                <div class="tags__html-code-area">
+                  <div class="tags__html-code-area-inner copy-area">
+                    <p class="tags__html-code-url">&lt;meta property=&quot;og:url&quot; content=&quot;<span class="tags__include-url--js"></span>&quot; /&gt;</p>
+                    <p class="tags__html-code-title">&lt;meta property=&quot;og:title&quot; content=&quot;ページのタイトル&quot; /&gt;</p>
+                    <p class="tags__html-code-type">&lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&gt;</p>
+                    <p class="tags__html-code-description">&lt;meta property=&quot;og:description&quot; content=&quot;<span class="tags__include-description--js"> </span>&quot; /&gt;</p>
+                    <p class="tags__html-code-image">&lt;meta property=&quot;og:image&quot; content=&quot;<span class="tags__include-url--js"></span>画像のパス&quot; /&gt;</p>
+                    <p class="tags__html-code-site_name">&lt;meta property=&quot;og:site_name&quot; content=&quot;サイト名&quot; /&gt;</p>
+                    <p class="tags__html-code-local">&lt;meta property=&quot;og:locale&quot; content=&quot;ja_JP&quot; /&gt;</p>
+                    <p class="tags__html-code-app_id">&lt;meta property=&quot;fb:app_id&quot; content=&quot;appIDを入力&quot; /&gt;</p>
+                    <p class="tags__html-code-twitter-card">&lt;meta name=&quot;twitter:card&quot; content=&quot;<span class="tags__html-code-twitter-card-val---js"></span>&quot; /&gt;</p>
+                    <p class="tags__html-code-twitter-site">&lt;meta name=&quot;twitter:site&quot; content=&quot;@ユーザー名&quot; /&gt;</p>
+                  </div>
+                </div>
+                <p class="tags__html-copy-icon copy-btn" data-text="copy"><i class="far fa-copy"></i></p>
+              </div>
+            </div>
+            <div class="tags__pug-area">
+              <div class="tags__pug-top-section"><img class="tags__pug-logo" src="./images/pug_logo.png">
+                <h2 class="tags__pug-title">Pug</h2>
+              </div>
+              <div class="tags__pug-code-wrap">
+                <div class="tags__pug-notice-area"><i class="fas fa-arrow-circle-right tags__pug-notice-url"></i><i class="fas fa-arrow-circle-right tags__pug-notice-title"></i><i class="fas fa-arrow-circle-right tags__pug-notice-type"></i><i class="fas fa-arrow-circle-right tags__pug-notice-description"></i><i class="fas fa-arrow-circle-right tags__pug-notice-image"></i><i class="fas fa-arrow-circle-right tags__pug-notice-site_name"></i><i class="fas fa-arrow-circle-right tags__pug-notice-local"></i><i class="fas fa-arrow-circle-right tags__pug-notice-app_id"></i><i class="fas fa-arrow-circle-right tags__pug-notice-card"></i><i class="fas fa-arrow-circle-right tags__pug-notice-site"></i></div>
+                <div class="tags__pug-code-area">
+                  <div class="tags__pug-code-area-inner copy-area">
+                    <p class="tags__pug-code-url">meta(property=&quot;og:url&quot;, content=&quot;<span class="tags__include-url--js"></span>&quot;)</p>
+                    <p class="tags__pug-code-title">meta(property=&quot;og:title&quot;, content=&quot;ページのタイトル&quot;)</p>
+                    <p class="tags__pug-code-type">meta(property=&quot;og:type&quot;, content=&quot;website&quot;)</p>
+                    <p class="tags__pug-code-description">meta(property=&quot;og:description&quot;, content=&quot;<span class="tags__include-description--js"> </span>&quot;)</p>
+                    <p class="tags__pug-code-image">meta(property=&quot;og:image&quot;, content=&quot;<span class="tags__include-url--js"></span>画像のパス&quot;)</p>
+                    <p class="tags__pug-code-site_name">meta(property=&quot;og:site_name&quot;, content=&quot;サイト名&quot;)</p>
+                    <p class="tags__pug-code-local">meta(property=&quot;og:locale&quot;, content=&quot;ja_JP&quot;)</p>
+                    <p class="tags__pug-code-app_id">meta(property=&quot;fb:app_id&quot;, content=&quot;appIDを入力&quot;)</p>
+                    <p class="tags__pug-code-twitter-card">meta(name=&quot;twitter:card&quot;, content=&quot;<span class="tags__html-code-twitter-card-val---js"></span>&quot;)</p>
+                    <p class="tags__pug-code-twitter-site">meta(name=&quot;twitter:site&quot;, content=&quot;@ユーザー名&quot;)</p>
+                  </div>
+                </div>
+                <p class="tags__pug-copy-icon copy-btn" data-text="copy"><i class="far fa-copy"></i></p>
+              </div>
+            </div>
+            <div class="tags__url-area">
+              <h2 class="tags__sns-url-title">SNS share URL</h2>
+              <div class="tags__line">
+                <div class="tags__line-title-section"><img class="tags__line-title-img" src="./images/line_logo.png">
+                  <p class="tags__line-notice-icon"><i class="far fa-flag"></i></p>
+                </div>
+                <div class="tags__sns-code-wrap">
+                  <div class="tags__sns-notice-area"><i class="fas fa-arrow-circle-right tags__sns-url-notice-icon"></i></div>
+                  <div class="tags__line-code-area">
+                    <div class="tags__line-code-inner copy-area">
+                      <p class="tags__line-url-code">http://line.me/R/msg/text/?&lt;ここにエンコードしたテキストとURL&gt;</p>
+                    </div>
+                  </div>
+                  <p class="tags__sns-url-copy-icon copy-btn" data-text="copy"><i class="far fa-copy"></i></p>
+                </div>
+              </div>
+              <div class="tags__twitter">
+                <div class="tags__twitter-title-section"><img class="tags__twitter-title-img" src="./images/twitter_logo.png">
+                  <p class="tags__twitter-notice-icon"><i class="far fa-flag"></i></p>
+                </div>
+                <div class="tags__sns-code-wrap">
+                  <div class="tags__sns-notice-area"><i class="fas fa-arrow-circle-right tags__sns-url-notice-icon"></i></div>
+                  <div class="tags__twitter-code-area">
+                    <div class="tags__twitter-code-inner copy-area">
+                      <p class="tags__twitter-url-code">https://twitter.com/intent/tweet?url=&lt;URL&gt;&amp;text=&lt;テキスト&gt;&amp;via=&lt;ユーザーID&gt;&amp;hashtags=&lt;タグ名&gt;&amp;related=&lt;フォローを促すユーザーID&gt;</p>
+                    </div>
+                  </div>
+                  <p class="tags__sns-url-copy-icon copy-btn" data-text="copy"><i class="far fa-copy"></i></p>
+                </div>
+              </div>
+              <div class="tags__facebook">
+                <div class="tags__facebook-title-section"><img class="tags__facebook-title-img" src="./images/f_logo.png">
+                  <p class="tags__facebook-notice-icon"><i class="far fa-flag"></i></p>
+                </div>
+                <div class="tags__sns-code-wrap">
+                  <div class="tags__sns-notice-area"><i class="fas fa-arrow-circle-right tags__sns-url-notice-icon"></i></div>
+                  <div class="tags__facebook-code-area">
+                    <div class="tags__facebook-code-inner copy-area">
+                      <p class="tags__facebook-url-code">https://www.facebook.com/sharer/sharer.php?u=&lt;URL&gt;</p>
+                    </div>
+                  </div>
+                  <p class="tags__sns-url-copy-icon copy-btn" data-text="copy"><i class="far fa-copy"></i></p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="modal__mask"></div>
+      <section class="modal__section" id="modal">
+        <div class="modal__inner">
+          <div class="modal__contents"><img class="modal1-close modal__close js-img-switch js-fade-in" src="./images/img_modal-close-icon.png" alt="close">
+            <div class="form">
+              <section class="form__section">
+                <h2 class="form__title">入力フォーム</h2>
+                <div class="form__main">
+                  <div class="form__form-wrap-1">
+                    <div class="form__main-label-box-1">
+                      <p class="form__label-text-1">テキスト</p>
+                    </div>
+                    <div class="form__main-input-box-1">
+                      <textarea class="form__main-input-1" name="f-text" val="abc" id="f-text"></textarea>
+                    </div>
+                  </div>
+                  <div class="form__form-wrap-2">
+                    <div class="form__main-label-box-2">
+                      <p class="form__label-text-2">シェアするURL</p>
+                    </div>
+                    <div class="form__main-input-box-2">
+                      <input class="form__main-input-2" type="text" name="f-url" id="f-url">
+                    </div>
+                  </div>
+                </div>
+                <p class="form__twitter-title">Twitter用オプション</p>
+                <div class="form__twitter">
+                  <div class="form__form-wrap-3">
+                    <div class="form__main-label-box-3">
+                      <p class="form__label-text-3">Twitter Cardの種類</p>
+                    </div>
+                    <div class="form__main-select-box-3">
+                      <select name="card">
+                        <option value="summary">summary</option>
+                        <option value="summary_large_image">aummary_large_image</option>
+                        <option value="photo">photo</option>
+                        <option value="app">app</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__form-wrap-3">
+                    <div class="form__main-label-box-3">
+                      <p class="form__label-text-3">付与するアカウント</p>
+                    </div>
+                    <div class="form__main-input-box-3">
+                      <input class="form__main-input-3" type="text" name="" id="t-account1">
+                    </div>
+                  </div>
+                  <div class="form__form-wrap-4">
+                    <div class="form__main-label-box-4">
+                      <p class="form__label-text-4">ツイート後にフォローを促すアカウント</p>
+                    </div>
+                    <div class="form__main-input-box-4">
+                      <input class="form__main-input-4" type="text" name="" id="t-account2">
+                    </div>
+                  </div>
+                  <div class="form__form-wrap-5">
+                    <div class="form__main-label-box-5">
+                      <p class="form__label-text-5">ハッシュタグ(「#」を含めず複数の場合は「,」で区切る)</p>
+                    </div>
+                    <div class="form__main-input-box-5">
+                      <input class="form__main-input-5" type="text" name="" id="t-hashtag">
+                    </div>
+                  </div>
+                </div>
+                <div class="form__button-wrap">
+                  <p class="form__submit-button" id="submit-btn">作成</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
