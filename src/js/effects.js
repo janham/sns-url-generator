@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     $(window).on('scroll', function(){
         let scrollTop = $(window).scrollTop();
-        if(scrollTop >= 160){
+        if(scrollTop >= 96){
             $('.header').slideUp();
         }else{
             $('.header').slideDown();

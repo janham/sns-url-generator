@@ -1,6 +1,7 @@
 $breakpoints: (
     'sp': 'screen and (max-width: 480px)',
     // 'tl': 'screen and (max-width: 896px)',
+    'res': 'screen and (max-width: 1200px)',
     'pc': 'screen and (min-width: 480px)',
 ) !default;
 
@@ -36,6 +37,7 @@ main {
     font-family: fa5-proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #fff;
     display: block;
+    width: 100%;
 }
 
 .container {
@@ -90,6 +92,10 @@ main {
         font-size: 28px;
         z-index: 55;
         cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
     &__h1 {
         font-size: 30px;
@@ -107,6 +113,16 @@ main {
     // html ANCHOR
     &__section {
         padding: 96px 0;
+    }
+    &__top-code-section {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+
+        @include mq(res) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__html-logo {
         width: 40px;
@@ -238,13 +254,19 @@ main {
         @extend %__html-notice;
         @extend %__html-code-inner;
     }
+    &__url-area {
+        width: 100%;
+    }
 
     // pug ANCHOR
     &__pug-area {
-        padding: 24px 0;
+        // padding: 24px 0;
     }
     &__pug-top-section {
         display: flex;
+        @include mq(res) {
+            margin: 24px 0 0 0;
+        }
     }
     &__pug-logo {
         width: 40px;
@@ -375,6 +397,7 @@ main {
         padding: 16px 0 0 0;
     }
     &__sns-url-title {
+        margin: 24px 0 0 0;
     }
     %__notice-icon {
         color: #91D0D7;

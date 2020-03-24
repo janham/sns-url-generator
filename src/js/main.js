@@ -57,7 +57,7 @@ $(document).ready(function() {
         }, 200);
         setTimeout(function() {
             $('.head-message').fadeOut();
-        }, 5000);
+        }, 3000);
 
     });
 
@@ -82,7 +82,7 @@ $(document).ready(function() {
         }, 200);
         setTimeout(function() {
             $('.head-message').fadeOut();
-        }, 5000);
+        }, 3000);
     });
     // コードを一行ずつコピー
     $('.fa-arrow-circle-right').on('click', function () {
@@ -108,7 +108,7 @@ $(document).ready(function() {
         }, 200);
         setTimeout(function() {
             $('.head-message').fadeOut();
-        }, 5000);
+        }, 3000);
     });
 });
 

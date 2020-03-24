@@ -26,102 +26,103 @@ html(lang="ja")
             .container
                 .tags
                     section.tags__section
-                        .tags__html-area
-                            .tags__html-top-section
-                                img.tags__html-logo(src="./images/html_logo.png")
-                                h2.tags__html-title HTML
-                            .tags__html-code-wrap
-                                .tags__html-notice-area
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-url
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-title
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-type
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-description
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-image
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-site_name
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-local
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-app_id
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-card
-                                    i.fas.fa-arrow-circle-right.tags__html-notice-site
-                                .tags__html-code-area
-                                    .tags__html-code-area-inner.copy-area
-                                        p.tags__html-code-url
-                                            | #{'<meta property="og:url" content="'}
-                                            span.tags__include-url--js
-                                            |#{'" />'}
-                                        p.tags__html-code-title
-                                            | #{'<meta property="og:title" content="ページのタイトル" />'}
-                                        p.tags__html-code-type
-                                            | #{'<meta property="og:type" content="website">'}
-                                        p.tags__html-code-description
-                                            | #{'<meta property="og:description" content="'}
-                                            span.tags__include-description--js 
-                                            |#{'" />'}
-                                        p.tags__html-code-image
-                                            | #{'<meta property="og:image" content="'}
-                                            span.tags__include-url--js
-                                            | #{'画像のパス" />'}
-                                        p.tags__html-code-site_name
-                                            | #{'<meta property="og:site_name" content="サイト名" />'}
-                                        p.tags__html-code-local
-                                            | #{'<meta property="og:locale" content="ja_JP" />'}
-                                        p.tags__html-code-app_id
-                                            | #{'<meta property="fb:app_id" content="appIDを入力" />'}
-                                        p.tags__html-code-twitter-card
-                                            | #{'<meta name="twitter:card" content="'}
-                                            span.tags__html-code-twitter-card-val---js
-                                            | #{'" />'}
-                                        p.tags__html-code-twitter-site
-                                            | #{'<meta name="twitter:site" content="@ユーザー名" />'}
-                                p.tags__html-copy-icon.copy-btn(data-text="copy")
-                                    i.far.fa-copy
-                        .tags__pug-area
-                            .tags__pug-top-section
-                                img.tags__pug-logo(src="./images/pug_logo.png")
-                                h2.tags__pug-title Pug
-                            .tags__pug-code-wrap
-                                .tags__pug-notice-area
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-url
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-title
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-type
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-description
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-image
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-site_name
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-local
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-app_id
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-card
-                                    i.fas.fa-arrow-circle-right.tags__pug-notice-site
-                                .tags__pug-code-area
-                                    .tags__pug-code-area-inner.copy-area
-                                        p.tags__pug-code-url
-                                            | #{'meta(property="og:url", content="'}
-                                            span.tags__include-url--js
-                                            | #{'")'}
-                                        p.tags__pug-code-title
-                                            | #{'meta(property="og:title", content="ページのタイトル")'}
-                                        p.tags__pug-code-type
-                                            | #{'meta(property="og:type", content="website")'}
-                                        p.tags__pug-code-description
-                                            | #{'meta(property="og:description", content="'}
-                                            span.tags__include-description--js 
-                                            | #{'")'}
-                                        p.tags__pug-code-image
-                                            | #{'meta(property="og:image", content="'}
-                                            span.tags__include-url--js
-                                            | #{'画像のパス")'}
-                                        p.tags__pug-code-site_name
-                                            | #{'meta(property="og:site_name", content="サイト名")'}
-                                        p.tags__pug-code-local
-                                            | #{'meta(property="og:locale", content="ja_JP")'}
-                                        p.tags__pug-code-app_id
-                                            | #{'meta(property="fb:app_id", content="appIDを入力")'}
-                                        p.tags__pug-code-twitter-card
-                                            | #{'meta(name="twitter:card", content="'}
-                                            span.tags__html-code-twitter-card-val---js
-                                            | #{'")'}
-                                        p.tags__pug-code-twitter-site
-                                            | #{'meta(name="twitter:site", content="@ユーザー名")'}
-                                p.tags__pug-copy-icon.copy-btn(data-text="copy")
-                                    i.far.fa-copy
+                        .tags__top-code-section
+                            .tags__html-area
+                                .tags__html-top-section
+                                    img.tags__html-logo(src="./images/html_logo.png")
+                                    h2.tags__html-title HTML
+                                .tags__html-code-wrap
+                                    .tags__html-notice-area
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-url
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-title
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-type
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-description
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-image
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-site_name
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-local
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-app_id
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-card
+                                        i.fas.fa-arrow-circle-right.tags__html-notice-site
+                                    .tags__html-code-area
+                                        .tags__html-code-area-inner.copy-area
+                                            p.tags__html-code-url
+                                                | #{'<meta property="og:url" content="'}
+                                                span.tags__include-url--js
+                                                |#{'" />'}
+                                            p.tags__html-code-title
+                                                | #{'<meta property="og:title" content="ページのタイトル" />'}
+                                            p.tags__html-code-type
+                                                | #{'<meta property="og:type" content="website">'}
+                                            p.tags__html-code-description
+                                                | #{'<meta property="og:description" content="'}
+                                                span.tags__include-description--js 
+                                                |#{'" />'}
+                                            p.tags__html-code-image
+                                                | #{'<meta property="og:image" content="'}
+                                                span.tags__include-url--js
+                                                | #{'画像のパス" />'}
+                                            p.tags__html-code-site_name
+                                                | #{'<meta property="og:site_name" content="サイト名" />'}
+                                            p.tags__html-code-local
+                                                | #{'<meta property="og:locale" content="ja_JP" />'}
+                                            p.tags__html-code-app_id
+                                                | #{'<meta property="fb:app_id" content="appIDを入力" />'}
+                                            p.tags__html-code-twitter-card
+                                                | #{'<meta name="twitter:card" content="'}
+                                                span.tags__html-code-twitter-card-val---js
+                                                | #{'" />'}
+                                            p.tags__html-code-twitter-site
+                                                | #{'<meta name="twitter:site" content="@ユーザー名" />'}
+                                    p.tags__html-copy-icon.copy-btn(data-text="copy")
+                                        i.far.fa-copy
+                            .tags__pug-area
+                                .tags__pug-top-section
+                                    img.tags__pug-logo(src="./images/pug_logo.png")
+                                    h2.tags__pug-title Pug
+                                .tags__pug-code-wrap
+                                    .tags__pug-notice-area
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-url
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-title
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-type
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-description
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-image
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-site_name
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-local
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-app_id
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-card
+                                        i.fas.fa-arrow-circle-right.tags__pug-notice-site
+                                    .tags__pug-code-area
+                                        .tags__pug-code-area-inner.copy-area
+                                            p.tags__pug-code-url
+                                                | #{'meta(property="og:url", content="'}
+                                                span.tags__include-url--js
+                                                | #{'")'}
+                                            p.tags__pug-code-title
+                                                | #{'meta(property="og:title", content="ページのタイトル")'}
+                                            p.tags__pug-code-type
+                                                | #{'meta(property="og:type", content="website")'}
+                                            p.tags__pug-code-description
+                                                | #{'meta(property="og:description", content="'}
+                                                span.tags__include-description--js 
+                                                | #{'")'}
+                                            p.tags__pug-code-image
+                                                | #{'meta(property="og:image", content="'}
+                                                span.tags__include-url--js
+                                                | #{'画像のパス")'}
+                                            p.tags__pug-code-site_name
+                                                | #{'meta(property="og:site_name", content="サイト名")'}
+                                            p.tags__pug-code-local
+                                                | #{'meta(property="og:locale", content="ja_JP")'}
+                                            p.tags__pug-code-app_id
+                                                | #{'meta(property="fb:app_id", content="appIDを入力")'}
+                                            p.tags__pug-code-twitter-card
+                                                | #{'meta(name="twitter:card", content="'}
+                                                span.tags__html-code-twitter-card-val---js
+                                                | #{'")'}
+                                            p.tags__pug-code-twitter-site
+                                                | #{'meta(name="twitter:site", content="@ユーザー名")'}
+                                    p.tags__pug-copy-icon.copy-btn(data-text="copy")
+                                        i.far.fa-copy
                         .tags__url-area
                             h2.tags__sns-url-title SNS share URL
                             .tags__line
