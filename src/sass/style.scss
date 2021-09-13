@@ -1,6 +1,7 @@
 $breakpoints: (
     'sp': 'screen and (max-width: 480px)',
     // 'tl': 'screen and (max-width: 896px)',
+    'res': 'screen and (max-width: 1200px)',
     'pc': 'screen and (min-width: 480px)',
 ) !default;
 
@@ -36,6 +37,7 @@ main {
     font-family: fa5-proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #fff;
     display: block;
+    width: 100%;
 }
 
 .container {
@@ -58,7 +60,7 @@ main {
     top: 0;
     left: 0;
     z-index: 60;
-    opacity: 0.8;
+    opacity: 0.9;
     text-align: center;
     display: none;
 }
@@ -90,6 +92,10 @@ main {
         font-size: 28px;
         z-index: 55;
         cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
     &__h1 {
         font-size: 30px;
@@ -107,6 +113,16 @@ main {
     // html ANCHOR
     &__section {
         padding: 96px 0;
+    }
+    &__top-code-section {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+
+        @include mq(res) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__html-logo {
         width: 40px;
@@ -238,13 +254,19 @@ main {
         @extend %__html-notice;
         @extend %__html-code-inner;
     }
+    &__url-area {
+        width: 100%;
+    }
 
     // pug ANCHOR
     &__pug-area {
-        padding: 24px 0;
+        // padding: 24px 0;
     }
     &__pug-top-section {
         display: flex;
+        @include mq(res) {
+            margin: 24px 0 0 0;
+        }
     }
     &__pug-logo {
         width: 40px;
@@ -375,6 +397,7 @@ main {
         padding: 16px 0 0 0;
     }
     &__sns-url-title {
+        margin: 24px 0 0 0;
     }
     %__notice-icon {
         color: #91D0D7;
@@ -449,6 +472,15 @@ main {
     &__twitter-notice-icon {
         @extend %__notice-icon;
     }
+    &__card-validator {
+        text-decoration: none;
+        color: #91D0D7;
+        margin: 0 0 4px 24px;
+        align-self: flex-end;
+        &:hover {
+            color: #F7E3DA;
+        }
+    }
     &__twitter-url-code {
         @extend %__sns-url-code;
     }
@@ -467,6 +499,15 @@ main {
     }
     &__facebook-notice-icon {
         @extend %__notice-icon;
+    }
+    &__share-debugger {
+        text-decoration: none;
+        color: #91D0D7;
+        margin: 0 0 4px 24px;
+        align-self: flex-end;
+        &:hover {
+            color: #F7E3DA;
+        }
     }
     &__facebook-url-code {
         @extend %__sns-url-code;
@@ -664,4 +705,71 @@ main {
     }
 
     
+}
+.tooltips-SNS {
+    position: absolute;
+    width: 500px;
+    top: 19px;
+    left: 0.7em;
+    z-index: 9999;
+    padding: 1px;
+    font-size: 12px;
+    color: #fff;
+    background: #91D0D7;
+    border-radius: 0.5em;
+    cursor: default;
+}
+.tooltips-SNS {
+    &:after {
+        width: 100%;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0.5em;
+        top: -8px;
+        border-top:8px solid transparent;
+        border-left:8px solid #91D0D7;
+    }
+
+    
+}
+
+.flag-tt {
+    position: relative;
+    color: #91D0D7;
+}
+.flag-tt-modal {
+    position: relative;
+    color: #91D0D7;
+    margin: 0 0 0 8px;
+    cursor: pointer;
+}
+
+.SNSTips {
+    &__section {
+        border: 1px solid #91D0D7;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 4px;
+        max-width: 500px;
+        line-height: 14px;
+        color: rgb(90, 90, 90);
+    }
+    &__text1 {
+        font-size: 12px;
+        width: 100%;
+    }
+    &__text2 {
+        font-size: 12px;
+        width: 100%;
+    }
+    &__text3 {
+        font-size: 12px;
+        width: 100%;
+    }
+    &__text4 {
+        font-size: 12px;
+        width: 100%;
+    }
+
 }

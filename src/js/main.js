@@ -36,14 +36,21 @@ $(document).ready(function() {
 
         //url
         $('.tags__url-title').text('シェアリンクのURL');
-        
-        $('.tags__line-title').text('LINE');
-        $('.tags__line-url-code').text('line://msg/text/' + enFText + enFUrl + '');
-        
-        $('.tags__twitter-title').text('Twitter');
-        $('.tags__twitter-url-code').text('https://twitter.com/intent/tweet?url=' + enFUrl + '&text=' + enFText + '&via=' + enTAccount1 + '&hashtags=' + enTHashtag + '&related=' + enTAccount2 + '');
+        // LINE
+        $('.tags__line-url-code').text('http://line.me/R/msg/text/?' + enFText + enFUrl + '');
+        // Twitter
+        let addTextTwitter = 'https://twitter.com/intent/tweet?url=' + enFUrl + '&text=' + enFText + '&hashtags' + enTHashtag;
+        if(!tAccount1.length == 0){
+            addTextTwitter = addTextTwitter + '&via=' + enTAccount1;
+            console.log(addTextTwitter);
+        }
+        if(!tAccount2.length == 0){
+            addTextTwitter = addTextTwitter + '&related=' + enTAccount2;
+            console.log(addTextTwitter);
+        } 
+        $('.tags__twitter-url-code').text(addTextTwitter);
 
-        $('.tags__facebook-title').text('Facebook');
+        // facebook
         $('.tags__facebook-url-code').text('https://www.facebook.com/sharer/sharer.php?u='+ enFUrl + '');
         
         
@@ -57,7 +64,7 @@ $(document).ready(function() {
         }, 200);
         setTimeout(function() {
             $('.head-message').fadeOut();
-        }, 5000);
+        }, 3000);
 
     });
 
@@ -82,7 +89,7 @@ $(document).ready(function() {
         }, 200);
         setTimeout(function() {
             $('.head-message').fadeOut();
-        }, 5000);
+        }, 3000);
     });
     // コードを一行ずつコピー
     $('.fa-arrow-circle-right').on('click', function () {
@@ -108,7 +115,7 @@ $(document).ready(function() {
         }, 200);
         setTimeout(function() {
             $('.head-message').fadeOut();
-        }, 5000);
+        }, 3000);
     });
 });
 

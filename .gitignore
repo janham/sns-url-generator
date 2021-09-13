@@ -27,7 +27,10 @@ build/Release
 test.xunit
 
 # do not push output 
-dist/
+# dist/
 
 # do not push node_modules
 node_modules/
+
+.htaccess
+.htpasswd
