@@ -135,7 +135,7 @@ html(lang="ja")
                                         i.fas.fa-arrow-circle-right.tags__sns-url-notice-icon
                                     .tags__line-code-area
                                         .tags__line-code-inner.copy-area
-                                            p.tags__line-url-code #{'http://line.me/R/msg/text/?<ここにエンコードしたテキストとURL>'}
+                                            p.tags__line-url-code #{'http://line.me/R/msg/text/<ここにエンコードしたテキストとURL>'}
                                     p.tags__sns-url-copy-icon.copy-btn.tool-tip(data-text="copy")
                                         i.far.fa-copy
                             .tags__twitter
@@ -149,7 +149,7 @@ html(lang="ja")
                                         i.fas.fa-arrow-circle-right.tags__sns-url-notice-icon
                                     .tags__twitter-code-area
                                         .tags__twitter-code-inner.copy-area
-                                            p.tags__twitter-url-code #{'https://twitter.com/intent/tweet?url=<URL>&text=<テキスト>&via=<ツイート文に付与するユーザーID>&hashtags=<タグ名>&related=<フォローを促すユーザーID>'}
+                                            p.tags__twitter-url-code #{'https://twitter.com/intent/tweet?text=<ここにエンコードしたテキストとURL>'}
                                     p.tags__sns-url-copy-icon.copy-btn.tool-tip(data-text="copy")
                                         i.far.fa-copy
                             .tags__facebook
@@ -194,7 +194,7 @@ html(lang="ja")
                                             p.form__label-text-1 テキスト
                                         .form__main-input-box-1
                                             textarea(name="f-text" val="abc").form__main-input-1#f-text
-                                    .form__form-wrap-2
+                                    //- .form__form-wrap-2
                                         .form__main-label-box-2
                                             p.form__label-text-2 シェアするURL
                                         .form__main-input-box-2
@@ -216,19 +216,19 @@ html(lang="ja")
                                                 i.far.fa-flag.flag-tt-modal.tool-tip(data-text="twitter-mention")
                                         .form__main-input-box-3
                                             input(type="text" name="").form__main-input-3#t-account1
-                                    .form__form-wrap-4
+                                    //- .form__form-wrap-4
                                         .form__main-label-box-4
                                             p.form__label-text-4 ツイート後にフォローを促すアカウント
                                                 i.far.fa-flag.flag-tt-modal.tool-tip(data-text="twitter-follow")
                                                 //- |(ツイート後に特定のアカウントをフォローするように促すページを表示します)
                                         .form__main-input-box-4
                                             input(type="text" name="").form__main-input-4#t-account2
-                                    .form__form-wrap-5
+                                    //- .form__form-wrap-5
                                         .form__main-label-box-5
                                             p.form__label-text-5 ハッシュタグ(「#」を含めず複数の場合は「,」で区切る)
                                         .form__main-input-box-5
                                             input(type="text" name="").form__main-input-5#t-hashtag
                                 .form__button-wrap
-                                    p.form__submit-button#submit-btn 作成
+                                    a.form__submit-button#submit-btn 作成
 
                     

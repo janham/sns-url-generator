@@ -86,7 +86,7 @@
                   <div class="tags__sns-notice-area"><i class="fas fa-arrow-circle-right tags__sns-url-notice-icon"></i></div>
                   <div class="tags__line-code-area">
                     <div class="tags__line-code-inner copy-area">
-                      <p class="tags__line-url-code">http://line.me/R/msg/text/?&lt;ここにエンコードしたテキストとURL&gt;</p>
+                      <p class="tags__line-url-code">http://line.me/R/msg/text/&lt;ここにエンコードしたテキストとURL&gt;</p>
                     </div>
                   </div>
                   <p class="tags__sns-url-copy-icon copy-btn tool-tip" data-text="copy"><i class="far fa-copy"></i></p>
@@ -100,7 +100,7 @@
                   <div class="tags__sns-notice-area"><i class="fas fa-arrow-circle-right tags__sns-url-notice-icon"></i></div>
                   <div class="tags__twitter-code-area">
                     <div class="tags__twitter-code-inner copy-area">
-                      <p class="tags__twitter-url-code">https://twitter.com/intent/tweet?url=&lt;URL&gt;&amp;text=&lt;テキスト&gt;&amp;via=&lt;ツイート文に付与するユーザーID&gt;&amp;hashtags=&lt;タグ名&gt;&amp;related=&lt;フォローを促すユーザーID&gt;</p>
+                      <p class="tags__twitter-url-code">https://twitter.com/intent/tweet?text=&lt;ここにエンコードしたテキストとURL&gt;</p>
                     </div>
                   </div>
                   <p class="tags__sns-url-copy-icon copy-btn tool-tip" data-text="copy"><i class="far fa-copy"></i></p>
@@ -140,14 +140,6 @@
                       <textarea class="form__main-input-1" name="f-text" val="abc" id="f-text"></textarea>
                     </div>
                   </div>
-                  <div class="form__form-wrap-2">
-                    <div class="form__main-label-box-2">
-                      <p class="form__label-text-2">シェアするURL</p>
-                    </div>
-                    <div class="form__main-input-box-2">
-                      <input class="form__main-input-2" type="text" name="f-url" id="f-url">
-                    </div>
-                  </div>
                 </div>
                 <p class="form__twitter-title">Twitter用オプション</p>
                 <div class="form__twitter">
@@ -172,26 +164,8 @@
                       <input class="form__main-input-3" type="text" name="" id="t-account1">
                     </div>
                   </div>
-                  <div class="form__form-wrap-4">
-                    <div class="form__main-label-box-4">
-                      <p class="form__label-text-4">ツイート後にフォローを促すアカウント<i class="far fa-flag flag-tt-modal tool-tip" data-text="twitter-follow"></i></p>
-                    </div>
-                    <div class="form__main-input-box-4">
-                      <input class="form__main-input-4" type="text" name="" id="t-account2">
-                    </div>
-                  </div>
-                  <div class="form__form-wrap-5">
-                    <div class="form__main-label-box-5">
-                      <p class="form__label-text-5">ハッシュタグ(「#」を含めず複数の場合は「,」で区切る)</p>
-                    </div>
-                    <div class="form__main-input-box-5">
-                      <input class="form__main-input-5" type="text" name="" id="t-hashtag">
-                    </div>
-                  </div>
                 </div>
-                <div class="form__button-wrap">
-                  <p class="form__submit-button" id="submit-btn">作成</p>
-                </div>
+                <div class="form__button-wrap"><a class="form__submit-button" id="submit-btn">作成</a></div>
               </section>
             </div>
           </div>
